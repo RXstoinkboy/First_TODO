@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>First TODO project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="todo-wrapper">
+
+        <!--todo form starts here-->
+        <form class="todo-form" id="todoForm">
+            <div class="todo-form-row">
+                <label class="todo-form-label" for="todo-message">Wpisz nowe zadanie:</label>
+                <textarea class="todo-form-message" name="todo-message" id="todo-message"></textarea>
+            </div>
+            <div class="todo-form-row">
+                <button type="submit" class="todo-form-button">DODAJ</button>
+            </div>
+        </form>
+        <!--todo form ends here-->
+
+        <!--todo list starts here-->
+        <section class="todo-list" id="todoList">
+
+            <!--todo list title starts here-->
+            <header class="todo-header">
+                <h2 class="todo-header-title">
+                    Zadania:
+                </h2>
+
+                <form class="todo-list-search-form" id="todoSearch">
+                    <input type="search" class="todo-list-search-input" placeholder="search">
+                </form>
+            </header>
+            <!--todo list title ends here-->
+
+        </section>
+        <!--todo list ends here-->
+
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
